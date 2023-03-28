@@ -12,6 +12,12 @@ const token = "EAAIYr2ZBJEW8BANdD5gZAITTUHzcNarmTSJ2uaTBcrY7cv8U38dEuGt2UAgHLYLg
 
 
 var app = express();
+// const PORT = process.env.PORT || 8080;
+
+app.listen(8080, () => {
+  console.log(`Server listening on port ...`);
+});
+
 app = express().use(body_parser.json())
 app.listen(5000,()=>console.log('app started.........'))
 app.use(logger('dev'));
