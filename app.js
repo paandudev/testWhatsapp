@@ -17,9 +17,10 @@ var app = express();
 // app.listen(8080, () => {
 //   console.log(`Server listening on port ...`);
 // });
-
+console.log('before app................')
 app = express().use(body_parser.json())
-app.listen(5000,()=>console.log('app started.........'))
+console.log('after app ...................');
+// app.listen(5000,()=>console.log('app started.........'))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
